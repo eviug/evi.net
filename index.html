@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EVI -Welcome</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="enlight.css" />
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="nav-container">
+
+            <div class="navbar">
+                <div class="company-details">
+                    <img src="img/enlight-vocational-institute-logo.png">
+                    <div class="company-name">
+                        <h2>
+                            Enlight Vocational Institute
+                        </h2>
+                        <p>Transforming lives with love and knowledge</p>
+                    </div>
+                </div>
+                <div class="off-screen-menu">
+                    <a href="index.html">Home</a>
+                   <a href="courses.html">Courses</a>
+                   <a href="admissions.html">Admissions</a>
+                   <a href="faq.html">FAQ</a>
+                   <a href="about.html">About</a>
+                   <a href="contact.html">Contact</a>
+                   <a href="internships.html">Internships</a>
+                   <a href="portfolio.html">Portfolio</a>
+                   <a href="blog.html">Blog</a>
+                   <a href="students-life.html">Students Life</a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <button class="more-btn" onclick="toggleMenu()">
+                        More
+                    </button></li>
+
+                    </div>
+                    <div class="ham-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- DROPDOWN -->
+        <div class="dropdown" id="dropdownMenu">
+            <a href="internships.html">Internships</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="students-life.html">Students Life</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="home-hero">
+
+        <div class="home-hero-content">
+            <h1>
+                Building Practical Skills for a Better Future
+            </h1>
+            <p>
+                Enlight Vocational Institute provides hands-on
+                training that prepares students for employment,
+                entrepreneurship, and lifelong success.
+            </p>
+            <div class="home-hero-buttons">
+
+                <a href="docs/evi-brochure.pdf" download class="home-btn">
+                    Get Brochure
+                </a>
+                <a href="admissions.html" class="home-btn-outline">
+                    Apply Now
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION -->
+
+    <section class="home-about">
+
+        <div class="home-about-grid">
+
+            <div class="home-about-image-carousel">
+                <div class="home-about-image-slides">
+                    <img src="img/cover1.webp" alt="Image 1">
+                    <img src="img/cover2.webp" alt="Image 2">
+                    <img src="img/cover3.webp" alt="Image 3">
+                </div>
+
+
+            </div>
+
+            <div class="home-about-content">
+
+                <h2>Enlight Vocational Institute</h2>
+
+                <p>
+                    Enlight Vocational Institute (EVI) was founded in 2021
+                    under Enlight Educational Institutions. EVI is a
+                    skills-based training institution dedicated to equipping
+                    learners with practical knowledge for the modern job
+                    market.
+
+                    We focus on hands-on learning, ensuring that every
+                    student gains real experience in their chosen field.
+                    Our programs empower learners with the ability to
+                    secure employment or start their own businesses.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VISION & MISSION -->
+
+    <section class="home-vision-section">
+
+        <div class="home-vision-card-grid">
+
+            <div class="home-vision-card">
+                <h3>Core Values</h3>
+
+                <p>
+                    Excellence, Integrity, Innovation, Discipline, Teamwork, and Lifelong Learning.
+                </p>
+
+            </div>
+
+            <div class="home-vision-card">
+
+                <h3>Vision</h3>
+
+                <p>
+                    To be a leading vocational training institute
+                    recognized for excellence in practical skills
+                    development and empowerment.
+                </p>
+            </div>
+
+            <div class="home-vision-card">
+
+                <h3>Mission</h3>
+
+                <p>
+                    To provide accessible, affordable, and high-quality
+                    vocational training that equips learners with
+                    relevant skills.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="stats-section">
+        <div class="stats-section-title">
+            <h2>Our School Statistics</h2>
+            <p>Tracking our growth and impact over the years</p>
+        </div>
+
+        <div class="stats-grid">
+
+            <!-- CURRENT TERM STUDENTS -->
+            <div class="stat-card">
+                <div class="icon"><img src="img/icon/number_of_student_now.webp"></div>
+                <h3 id="currentStudents">0</h3>
+                <p>Students This Term</p>
+            </div>
+
+            <!-- TOTAL STUDENTS IN 5 YEARS -->
+            <div class="stat-card">
+                <div class="icon"><img src="img/icon/all-students.webp"></div>
+                <h3 id="totalStudents">0</h3>
+                <p>Students Trained Since We Started</p>
+            </div>
+
+            <!-- YEARS OF SERVICE -->
+            <div class="stat-card">
+                <div class="icon"><img src="img/icon/experience2.webp"></div>
+                <h3 id="years">0</h3>
+                <p>Years of Excellence</p>
+            </div>
+
+            <!-- COURSES -->
+            <div class="stat-card">
+                <div class="icon"><img src="img/icon/courses.jpg"></div>
+                <h3 id="courses">0</h3>
+                <p>Professional Courses</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+
+    <section class="home-why-us-section">
+
+        <div class="home-why-us-section-title">
+            <h2>Why Choose Us</h2>
+        </div>
+
+        <div class="home-features-grid">
+
+            <div class="home-feature-box">
+                ✔ Practical hands-on training
+            </div>
+
+            <div class="home-feature-box">
+                ✔ Qualified instructors
+            </div>
+
+            <div class="home-feature-box">
+                ✔ Affordable learning programs
+            </div>
+
+            <div class="home-feature-box">
+                ✔ Recognized certification
+            </div>
+
+            <div class="home-feature-box">
+                ✔ Skills for self-employment
+            </div>
+
+            <div class="home-feature-box">
+                ✔ Connections to internships & jobs
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EVENTS & HIGHLIGHTS -->
+
+    <section class="home-highlights-section">
+        <div class="home-highlights-section-title">
+            <h2>Highlights</h2>
+        </div>
+
+        <div class="home-highlights-card-grid">
+
+            <div class="home-highlights-card">
+
+                <section class="countdown-section">
+
+
+                    <h2>School has opened</h2>
+
+                    <ul>
+                        <li>Reporting Time: 8:00 AM</li>
+                        <li>Bring school requirements</li>
+                        <li>Fees clearance recommended</li>
+                    </ul>
+
+                </section>
+
+
+            </div>
+
+            <div class="home-highlights-card">
+                <h2>Upcoming events:</h2>
+                <ul>
+                    <strong style="color:blue">Date: 5th June 2026</strong>
+                    <li>Finding your Voice - Comunication Skills in Partneship with Singinfy Foundation</li>
+
+                </ul>
+            </div>
+            <div class="home-highlights-card">
+                <h2>Happening this term</h2>
+
+                <li>Student Trip 3rd June to 6th June</li>
+                <li>Enlight Community Outreach</li>
+            </div>
+        </div>
+
+    </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <!-- FOOTER TOP -->
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">About</h3>
+
+                <p>
+                    Enlight Vocational Institute (EVI) was founded in 2021
+                    under Enlight Educational Institutions.
+
+                    EVI is a skills-based training institution fully
+                    accredited and recognized by the Ministry of Education
+                    and the National Council for Higher Education.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Resources</h3>
+
+
+                <ul>
+
+                    <li>
+                        <a href="admissions.html">Admissions</a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">Courses / Programs</a>
+                    </li>
+
+                    <li>
+                        <a href="students-life.html">News & Events</a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="docs/evi-brochure.pdf">Get Brochure</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Contact</h3>
+
+                <ul>
+
+                    <li style="display: flex;">
+
+                        <img src="img/icon/location.png" style="width: 25px;"> Nkoma, Matugga - Uganda
+                    </li>
+
+                    <li style="display: flex;">
+                        <img src="img/icon/contact.png" style="width:25px;"> +256 775 101 897
+                    </li>
+
+                    <li style="display: flex;">
+                        <a href="contact.html">
+
+                            <img src="img/icon/email.webp" style="width: 25px;"> support@enlightinstitute.org
+                        </a>
+                    </li>
+                    <li style="display: flex; gap: 5px;">
+                        <img src="img/icon/clock.webp" style="width: 20px;"> Mon - Fri: 8AM - 5PM
+                    </li>
+                </ul>
+
+
+                <div class="social-links">
+                    <a href="facebook,com"><img src="img/icon/fb-logo.jpg"></a>
+                    <a href="#"><img src="img/icon/x.webp"></a>
+                    <a href="#"><img src="img/icon/linkedin.jpg"></a>
+                    <a href="#"><img src="img/icon/tiktok.jpg"></a>
+                    <a href="#"><img src="img/icon/instagram.jpg"></a>
+
+                </div>
+
+
+
+
+
+                <a href="https://wa.me/256775101897" target="_blank" class="whatsapp-btn">
+                    <img src="img/icon/whatspp.webp" alt="WhatsApp">
+                </a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Recent Posts</h3>
+                <div class="recent-posts">
+
+                    <div class="recent-post1"><a href="posts.html">
+
+                            <img>
+                            <h2>Enlight launches Mentorship training program in partnership with Signify Foundation
+                            </h2>
+                        </a>
+
+                    </div>
+                    <div class="recent-post2"></div>
+                    <div class="recent-post3"></div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Enlight Vocational Institute.
+                All rights reserved.
+            </p>
+
+            <h4 class="whoami">Site by <a href="tooltech/portfolio.html">tooltech</a></h4>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+        // TARGET VALUES
+        const stats = [
+            { id: "currentStudents", target: 80 },
+            { id: "totalStudents", target: 400 },
+            { id: "years", target: 5 },
+            { id: "courses", target: 9 }
+        ];
+
+        // COUNTER FUNCTION
+        stats.forEach(stat => {
+            let count = 0;
+
+            const updateCounter = () => {
+                const element = document.getElementById(stat.id);
+
+                const increment = stat.target / 100;
+
+                if (count < stat.target) {
+                    count += increment;
+                    element.innerText = Math.floor(count);
+                    setTimeout(updateCounter, 20);
+                } else {
+                    element.innerText = stat.target + "+";
+                }
+            };
+
+            updateCounter();
+        });
+
+        function toggleMenu() {
+            document
+                .getElementById("dropdownMenu")
+                .classList
+                .toggle("show");
+        }
+        const slidesContainer = document.querySelector('.home-about-image-slides');
+        const totalSlides = slidesContainer.querySelectorAll('img').length;
+
+        let currentSlide = 0;
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slidesContainer.style.transform = `translateX(-${currentSlide * (100 / totalSlides)}%)`;
+        }
+
+        // Change slide every 10 seconds
+        setInterval(nextSlide, 10000);
+
+        const hamMenu = document.querySelector(".ham-menu");
+        const offScreenMenu = document.querySelector(".off-screen-menu");
+        hamMenu.addEventListener("click", () => {
+            hamMenu.classList.toggle("active");
+            offScreenMenu.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>

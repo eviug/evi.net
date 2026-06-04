@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EVI - Admission</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- EXTERNAL css here-->
+    <link rel="stylesheet" href="enlight.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- NAVBAR -->
+      <nav>
+     
+             <div class="nav-container">
+     
+                 <div class="navbar">
+                     <div class="company-details">
+                         <img src="img/enlight-vocational-institute-logo.png">
+                         <div class="company-name">
+                             <h2>
+                                 Enlight Vocational Institute
+                             </h2>
+                             <p>Transforming lives with love and knowledge</p>
+                         </div>
+                     </div>
+                     <div class="off-screen-menu">
+                         <a href="index.html">Home</a>
+                        <a href="courses.html">Courses</a>
+                        <a href="admissions.html">Admissions</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="internships.html">Internships</a>
+                        <a href="portfolio.html">Portfolio</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="students-life.html">Students Life</a>
+                     </div>
+                     <div class="nav-links">
+                         <a href="index.html">Home</a>
+                         <a href="courses.html">Courses</a>
+                         <a href="admissions.html">Admissions</a>
+                         <a href="faq.html">FAQ</a>
+                         <a href="about.html">About</a>
+                         <a href="contact.html">Contact</a>
+                         <button class="more-btn" onclick="toggleMenu()">
+                             More
+                         </button></li>
+     
+                         </div>
+                         <div class="ham-menu">
+                             <span></span>
+                             <span></span>
+                             <span></span>
+                     </div>
+                 </div>
+             </div>
+             <!-- DROPDOWN -->
+             <div class="dropdown" id="dropdownMenu">
+                 <a href="internships.html">Internships</a>
+                 <a href="portfolio.html">Portfolio</a>
+                 <a href="blog.html">Blog</a>
+                 <a href="students-life.html">Students Life</a>
+             </div>
+         </nav>
+    </header>
+    <section class="hero-enlight">
+      <div class="hero-enlight-content">
+        <h1>Join Us</h1>
+        <p>Begin your journey to a better future</p>
+      </div>
+    </section>
+    <section class="admission-page">
+      <div class="admission-container">
+        <h3 style="font-size: 1.3rem; text-align: center; color: #0d2d62;padding:0.6rem">
+          Application Form
+        </h3>
+
+        <div class="admission-body">
+          <form>
+            <!-- Personal Information -->
+            <h3>Personal Information</h3>
+            <div class="row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" required />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" required />
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" required />
+              </div>
+              <div class="form-group">
+                <label>Gender</label>
+                <select required>
+                  <option value="">Select Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Contact Information -->
+            <h3>Contact Information</h3>
+
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" required />
+            </div>
+
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" />
+            </div>
+
+            <div class="form-group">
+              <label>Home Address</label>
+              <textarea rows="3"></textarea>
+            </div>
+
+            <!-- Academic Information -->
+            <h3>Academic Information</h3>
+
+            <div class="form-group">
+              <label>Former School / Institution</label>
+              <input type="text" />
+            </div>
+
+            <div class="row">
+              <div class="form-group">
+                <label>Highest Qualification</label>
+                <select>
+                  <option value="wwe">Select Qualification</option>
+                  <option>UCE</option>
+                  <option>UACE</option>
+                  <option>Certificate</option>
+                  <option>Diploma</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Year Completed</label>
+                <input type="number" />
+              </div>
+            </div>
+
+            <!-- Course Selection -->
+            <h3>Course Selection</h3>
+
+            <div class="form-group">
+              <label>Program Applying For</label>
+              <select required>
+                <option value="">Select Course</option>
+                <option>Information Technology</option>
+                <option>Electrical Installation</option>
+                <option>Fashion & Design</option>
+                <option>Building & Construction</option>
+                <option>Hairdressing & Beauty</option>
+                <option>Catering & Hotel Management</option>
+                <option>Motor Vehicle Mechanics</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Preferred Intake</label>
+              <select>
+                <option>January Intake</option>
+                <option>May Intake</option>
+                <option>September Intake</option>
+              </select>
+            </div>
+
+            <!-- Parent / Guardian -->
+            <h3>Parent / Guardian Information</h3>
+
+            <div class="form-group">
+              <label>Parent / Guardian Name</label>
+              <input type="text" />
+            </div>
+
+            <div class="form-group">
+              <label>Parent / Guardian Contact</label>
+              <input type="tel" />
+            </div>
+
+            <!-- Additional Information -->
+            <h3>Additional Information</h3>
+
+            <div class="form-group">
+              <label
+                >Why do you want to join Enlight Vocational Institute?</label
+              >
+              <textarea rows="5"></textarea>
+            </div>
+
+            <!-- Declaration -->
+            <h3>Declaration</h3>
+
+            <div class="checkbox-group">
+              <input type="checkbox" required />
+              <span
+                >I confirm that the information provided is true and
+                correct.</span
+              >
+            </div>
+
+            <button type="submit">Submit Application</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <!-- FOOTER TOP -->
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">About</h3>
+
+                <p>
+                    Enlight Vocational Institute (EVI) was founded in 2021
+                    under Enlight Educational Institutions.
+
+                    EVI is a skills-based training institution fully
+                    accredited and recognized by the Ministry of Education
+                    and the National Council for Higher Education.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Resources</h3>
+
+
+                <ul>
+
+                    <li>
+                        <a href="admissions.html">Admissions</a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">Courses / Programs</a>
+                    </li>
+
+                    <li>
+                        <a href="students-life.html">News & Events</a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="docs/evi-brochure.pdf">Get Brochure</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Contact</h3>
+
+                <ul>
+
+                    <li>
+
+                        📍 Nkoma, Matugga - Uganda
+                    </li>
+
+                    <li>
+                        📞 +256 775 101 897
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+
+                            support@enlightinstitute.org
+                        </a>
+                    </li>
+                    <li>
+                        Mon - Fri: 8AM - 5PM
+                    </li>
+                </ul>
+
+
+                <div class="social-links">
+                    <a href="facebook,com"><img src="img/icon/fb-logo.jpg"></a>
+                    <a href="#"><img src="img/icon/x.webp"></a>
+                    <a href="#"><img src="img/icon/linkedin.jpg"></a>
+                    <a href="#"><img src="img/icon/tiktok.jpg"></a>
+                    <a href="#"><img src="img/icon/instagram.jpg"></a>
+
+                </div>
+
+
+
+
+
+                <a href="https://wa.me/256775101897" target="_blank" class="whatsapp-btn">
+                    <img src="img/icon/whatspp.webp" alt="WhatsApp">
+                </a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">Recent Posts</h3>
+                <div class="recent-posts">
+
+                    <div class="recent-post1"><a href="posts.html">
+
+                            <img>
+                            <h2>Enlight launches Mentorship training program in partnership with Signify Foundation
+                            </h2>
+                        </a>
+
+                    </div>
+                    <div class="recent-post2"></div>
+                    <div class="recent-post3"></div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Enlight Vocational Institute.
+                All rights reserved.
+            </p>
+
+            <h4 class="whoami">Site by <a href="tooltech/portfolio.html">tooltech</a></h4>
+
+        </div>
+
+    </footer>
+    <script>
+      function toggleMenu() {
+            document
+                .getElementById("dropdownMenu")
+                .classList
+                .toggle("show");
+        }
+        const hamMenu = document.querySelector(".ham-menu");
+        const offScreenMenu = document.querySelector(".off-screen-menu");
+        hamMenu.addEventListener("click", () => {
+            hamMenu.classList.toggle("active");
+            offScreenMenu.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
