@@ -91,11 +91,11 @@ nav {
 }
 .company-details h2 {
     color: #0d2d62;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .company-details p {
     color: #333;
-    font-size: 0.96rem;
+    font-size: 0.84rem;
 }
 
 .company-details img {
@@ -114,14 +114,15 @@ nav {
 .nav-links a {
     color: #333;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.9rem;
 }
 
 .nav-links a:hover {
+   color: #333;
+    text-decoration: none;
+    font-size: 1rem;
     padding: 0.9rem;
-    font-size: 1.1rem;
-    color: white;
     background: #0d47a1;
     border-radius: 5px;
 }
@@ -134,9 +135,9 @@ nav {
     position: fixed;
     top: 0;
     right: -450px;
+    margin-top: 6rem;
     display: none;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 1.5rem;
@@ -149,10 +150,10 @@ nav {
     color:#e68900;
     border-bottom: 0.5px solid  #0d2d62;
     border: 1px solid white;
-    padding: 0.2rem 0;
+    padding: 0.3rem 0;
     text-shadow:1px #25d366;
-    font-size: 1.2rem;
-    margin: 0.2rem;
+    font-size: 1.5rem;
+    margin: 0.5rem;
     width: 80%;
     border-radius: 0.6rem;
 }
@@ -162,11 +163,11 @@ nav {
 
 .ham-menu {
     display: none;
-    height: 2.3rem;
-    width: 2.3rem;
+    height: 2.5rem;
+    width: 2rem;
     position: relative;
     margin-left:-10rem;
-    margin-right: 0.5rem;
+    margin-right: 1.9rem;
     position: relative;
     padding-right: 1rem;
 }
@@ -211,6 +212,9 @@ nav {
 }
 
 .more-btn:hover {
+  
+    text-decoration: none;
+    font-size: 1rem;
     padding: 0.9rem;
     font-size: 1.2rem;
     color: white;
@@ -1137,7 +1141,7 @@ textarea {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
+    font-size:1rem;
 }
 
 .contact-form button {
@@ -1578,16 +1582,20 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
     .company-details h2 {
         color: #0d2d62;
-        font-size: 1rem;
+        font-size: 1.25rem;
+        padding: 0.3rem;
     }
     .company-details p {
         color: #333;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        font-size: 0.8rem;
+
+
     }
 
     .company-details img {
-        height: 3.5rem;
-        margin: 0.5rem 0 0.1rem 0;
+        height: 5rem;
+        margin: 0.5rem 0.5rem 0 0.5rem;
     }
       .nav-links {
         display: none;
@@ -1667,13 +1675,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .home-hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
         padding: 0 10px;
     }
 
     .home-hero-content p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 0 10px;
         text-align: center;
     }
@@ -1690,7 +1698,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .home-btn {
-        font-size: 15px;
+        font-size: 1rem;
         width: 100%;
         background: #e68900;
         border-radius: 5px;
@@ -1720,17 +1728,17 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .home-about-content h2 {
-        font-size: 1.3rem;
+        font-size: 2rem;
         margin-top: -30px;
     }
 
     .home-about-content p {
-        font-size: 16px;
+        font-size: 1.2rem;
         margin-bottom: -1rem;
     }
 
     .home-vision-section {
-        margin-top: -40px;
+        margin-top: -2.8rem;
     }
 
     .home-vision-card-grid {
@@ -1744,6 +1752,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         margin: 0 auto;
         line-height: 1.5;
     }
+    .home-vision-card h3{
+        font-size: 1.5rem;
+    }
+    .home-vision-card p{
+        font-size: 1.3rem;
+        text-align: center;
+    }
 
     .stats-grid {
         grid-template-columns: 1fr 1fr;
@@ -1754,12 +1769,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .stats-section-title h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: -20px;
+        
     }
 
     .stats-section-title p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .icon {
@@ -1776,7 +1792,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .home-why-us-section-title h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .home-features-grid {
@@ -1784,31 +1800,45 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .home-feature-box {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
-
+    
     .home-highlights-section-title h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-top: 0;
     }
 
     .home-highlights-card-grid {
         grid-template-columns: 1fr;
-        gap: 0.9rem;
+        gap: 1rem;
+        width: 90%;
+        background-color:#f5fffa;
+    }
+    .home-highlights-card{
+        background-color: white;
+        border-radius: 0.5rem;
+    }
+    .home-highlights-card h2{
+        font-size: 1.5em;
+        padding: 0.5rem;
+    }
+    .home-highlights-card li{
+        font-size: 1.2;
+        line-height: 1.6m;
     }
 
     /* Courses Page */
 
     .courses-hero-content-title h1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
 
     .courses-hero-content-title p {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .courses-hero-content-title h2 {
-        font-size: 1.2rem;
+        font-size: 2rem;
         margin-bottom: -0.7rem;
         color: #0d2d62;
     }
@@ -1831,6 +1861,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .course-card h3 {
+        font-size: 1.5rem;
+    }
+    .course-content p{
         font-size: 1.2rem;
     }
 
@@ -1845,7 +1878,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .footer-title {
-        font-size: 18px;
+        font-size: 2rem;
+    }
+    .footer-column li a{
+        font-size: 1.2rem;
+    }
+    .footer-column p{
+        font-size: 1.2rem;
     }
 
     .whatsapp-btn {
@@ -1865,14 +1904,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
     
     .hero-enlight h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 1.2;
         font-weight: 1500;
         margin-top: -0.8rem;
     }
     
     .hero-enlight p {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
     
 
@@ -1897,8 +1936,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .intro{
       max-width: 100%;
       width: 95%;
-      padding: 0.5rem;
-      
+      padding: 0.5rem;   
+  }
+  .faq-container .intro {
+    font-size: 1.2rem;
   }
   
   .faq-body{
@@ -1908,9 +1949,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
   }
 
   .faq-question{
-      font-size: 0.9rem;
+      font-size: 1.2rem;
       text-align: left;
   }
+  .faq-answer ,li{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
   .faq-icon{
       font-size: 0.9rem;
   }
@@ -1919,6 +1965,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         width: 95%;
         padding: 0.5rem;
         
+    }
+    .faq-container .outro{
+        font-size:1.2rem;
     }
     /* About Page */
 
@@ -1930,14 +1979,14 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
        
    }
    .about-content-section-title h2{
-       font-size: 1.2rem;
+       font-size:2rem;
        margin-top: -1.2rem; 
        margin-bottom: 0.2rem;
    }
    .aboutpage-content-card p{
-       font-size: 0.9rem;
-       padding: 0 1rem;
-       margin-top: -0.8rem;
+       font-size: 1.2rem;
+      /* padding: 0 1rem;*/
+       margin-top: -1.2rem;
        margin-bottom: -1rem;
    }
    .aboutpage-image img{
@@ -1946,11 +1995,15 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
        width: 95%; 
    }
 .aboutpage-mission-vision-card h3{
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: -0.7rem;
 }
-.why-us-section-title h2{
+.aboutpage-mission-vision-card p{
     font-size: 1.2rem;
+}
+
+.why-us-section-title h2{
+    font-size: 2rem;
 }
 .aboutpage-why-choose{
     grid-template-columns: 1fr;
@@ -1961,7 +2014,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     margin-top: -1rem;
 }
 .aboutpage-feature-box h3{
-    font-size:1rem;
+    font-size:1.5rem;
+}
+.aboutpage-feature-box p{
+    font-size: 1.2rem;
 }
 
 
@@ -1989,10 +2045,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     margin: 0 auto;
 }
 .team-section-title h2{
-    font-size: 1.2rem;
+    font-size:2rem;
 }
 .our-team-section p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 1rem;
 }
 .team-section-card{
@@ -2012,8 +2068,9 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .team-section-card h3 {
     
     color: #222;
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
+    color:teal;
 
 }
 
@@ -2023,7 +2080,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     font-weight: 600;
     margin-bottom: -1rem;
     padding-bottom: -1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
     
 
@@ -2031,7 +2088,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
 .team-section-card p {
     color: #666;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     line-height: 1.6;
 }
 
@@ -2040,18 +2097,26 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 .contact-container{
     max-width: 100%;
     width: 95%;
+    flex-direction: column;
 }
 .contact-info h2{
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .contact-info p{
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
-.contact-form h2{
-    font-size: 1.2rem;    
+.contact-form input,
+.contact-form textarea {
+    font-size: 1.5rem;    
 }
+.contact-form button{
+    font-size:1.2rem;
 
 
+
+}
+.blog-content p{
+    font-size: 1.5rem;
 }
 
 
