@@ -477,20 +477,27 @@
                 .classList
                 .toggle("show");
         }
-     const slides = document.querySelector('.home-about-image-slides');
-const totalSlides = document.querySelectorAll('.home-about-image-slides img').length;
+        const hamMenu = document.querySelector(".ham-menu");
+        const offScreenMenu = document.querySelector(".off-screen-menu");
+        hamMenu.addEventListener("click", () => {
+            hamMenu.classList.toggle("active");
+            offScreenMenu.classList.toggle("active");
+        });
+        
+        const slides = document.querySelector('.home-about-image-slides');
+        const totalSlides = document.querySelectorAll('.home-about-image-slides img').length;
 
-let currentSlide = 0;
+        let currentSlide = 0;
 
-setInterval(() => {
-    currentSlide++;
+        setInterval(() => {
+            currentSlide++;
 
-    if (currentSlide >= totalSlides) {
-        currentSlide = 0;
-    }
+            if (currentSlide >= totalSlides) {
+                currentSlide = 0;
+            }
 
-    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-}, 5000); // Change every 10 seconds
+            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }, 5000); // Change every 10 seconds
     </script>
 
 </body>
