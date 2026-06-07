@@ -374,30 +374,21 @@ nav {
 }
 
 .home-about-image-carousel {
-    width: 100%;
     max-width: 100%;
-    height: auto;
+    width: 100%;
     overflow: hidden;
-    margin-top: 1.1rem;
-    border-radius: 1rem;
+    position: relative;
+    border-radius: 0.5rem;
 }
 
 .home-about-image-slides {
-    display: flex;
-    transition: transform 1.2s ease-in-out;
+      display: flex;
+    transition: transform 1s ease-in-out;
 }
 
 .home-about-image-slides img {
-    /*
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    flex-shrink: 0;
-    */
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-    display: block;
+    flex-shrink: 0;
 }
 
 .home-about-content {
