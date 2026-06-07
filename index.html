@@ -30,15 +30,15 @@
                 </div>
                 <div class="off-screen-menu">
                     <a href="index.html">Home</a>
-                   <a href="courses.html">Courses</a>
-                   <a href="admissions.html">Admissions</a>
-                   <a href="faq.html">FAQ</a>
-                   <a href="about.html">About</a>
-                   <a href="contact.html">Contact</a>
-                   <a href="internships.html">Internships</a>
-                   <a href="portfolio.html">Portfolio</a>
-                   <a href="blog.html">Blog</a>
-                   <a href="students-life.html">Students Life</a>
+                    <a href="courses.html">Courses</a>
+                    <a href="admissions.html">Admissions</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="internships.html">Internships</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="students-life.html">Students Life</a>
                 </div>
                 <div class="nav-links">
                     <a href="index.html">Home</a>
@@ -51,11 +51,11 @@
                         More
                     </button></li>
 
-                    </div>
-                    <div class="ham-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                </div>
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
 
@@ -477,25 +477,20 @@
                 .classList
                 .toggle("show");
         }
-        const slidesContainer = document.querySelector('.home-about-image-slides');
-        const totalSlides = slidesContainer.querySelectorAll('img').length;
+     const slides = document.querySelector('.home-about-image-slides');
+const totalSlides = document.querySelectorAll('.home-about-image-slides img').length;
 
-        let currentSlide = 0;
+let currentSlide = 0;
 
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides;
-            slidesContainer.style.transform = `translateX(-${currentSlide * (100 / totalSlides)}%)`;
-        }
+setInterval(() => {
+    currentSlide++;
 
-        // Change slide every 10 seconds
-        setInterval(nextSlide, 10000);
+    if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    }
 
-        const hamMenu = document.querySelector(".ham-menu");
-        const offScreenMenu = document.querySelector(".off-screen-menu");
-        hamMenu.addEventListener("click", () => {
-            hamMenu.classList.toggle("active");
-            offScreenMenu.classList.toggle("active");
-        });
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+}, 5000); // Change every 10 seconds
     </script>
 
 </body>
