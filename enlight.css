@@ -12,9 +12,23 @@
     scroll-behavior: smooth;
 }
 
+.aboutpage-container,
+.contact-container,
+.courses-section,
+.blog-container,
+.team-section-container,
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 body {
     background-color: #f5fffa;
     min-height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
 }
 
 img {
@@ -22,8 +36,16 @@ img {
     height: auto;
     display: block;
 }
+.container90 {
+    max-width: 100%;
+    width: 20%;
+}
 
 /*Custom Hero - enlight hero */
+.hero-enlight-content h1,
+.courses-hero-content-title h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
 
 .hero-enlight {
     height: 20vh;
@@ -92,16 +114,16 @@ nav {
 
 .company-details h2 {
     color: #0d2d62;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .company-details p {
     color: #333;
-    font-size: 0.84rem;
+    font-size: 0.78rem;
 }
 
 .company-details img {
-    height: 5rem;
+    height: 4.5rem;
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     margin-bottom: 0.5rem;
@@ -117,20 +139,19 @@ nav {
     color: #333;
     text-decoration: none;
     font-size: 1rem;
-    padding: 0.9rem;
+    padding: 0.2rem 0.6rem;
 }
 
 .nav-links a:hover {
-    color: #333;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
-    padding: 0.9rem;
+    padding: 0.2rem 0.6rem;
     background: #0d47a1;
     border-radius: 5px;
 }
 
 .off-screen-menu {
-
     height: 100vh;
     width: 100%;
     max-width: 450px;
@@ -212,21 +233,19 @@ nav {
 
 /* MORE BUTTON */
 .more-btn {
-    color: #333;
+    color:#333;
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.9rem;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.6rem;
     border: none;
     background-color: #ffffff;
     border-radius: 5px;
 }
 
 .more-btn:hover {
-
     text-decoration: none;
-    font-size: 1rem;
-    padding: 0.9rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.6rem;
     color: white;
     background: #0d47a1;
     border-radius: 5px;
@@ -246,7 +265,7 @@ nav {
 .dropdown a {
     text-decoration: none;
     background: #ffffff;
-    padding: 10px 15px;
+    padding: 1px 15px;
     border-radius: 5px;
     color: #333;
     text-decoration: none;
@@ -382,7 +401,7 @@ nav {
 }
 
 .home-about-image-slides {
-      display: flex;
+    display: flex;
     transition: transform 1s ease-in-out;
 }
 
@@ -642,136 +661,154 @@ nav {
 }
 
 .courses-hero-content-title p {
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
 }
 
 .courses-hero-content-title h2 {
-    font-size: 40px;
-    margin-top: 10px;
+    font-size: 2rem;
+    margin-top: 1rem;
     text-align: center;
-}
-
-.courses-section {
-    max-width: 100%;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.course-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: 0.3s;
-}
-
-.course-card {
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s;
-}
-
-.course-content {
-    transform: translateY(10px);
-}
-
-.course-card p {
-    flex-grow: 1;
-}
-
-.course-card img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.course-card img {
-    border-radius: 10px;
-}
-
-.course-card {
-    padding: 25px;
-}
-
-.course-card h3 {
-    margin: 15px 10px;
     color: #0d2d62;
-    font-size: 24px;
+
 }
 
-.course-card p {
-    margin-bottom: 20px;
-    color: #555;
+.courses-grid{
+    max-width:1200px;
+    width: 95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:1rem;
 }
 
-.course-card ul {
-    margin-bottom: 25px;
-    padding-left: 20px;
+
+.course-card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+    margin: 1rem;
 }
 
-.course-card ul li {
-    margin-bottom: 8px;
+.course-slide{
+    position:relative;
+    height:20rem;
+    overflow:hidden;
 }
 
-.course-card li {
-    margin-bottom: 10px;
-    color: #444;
+.course-slide img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 3s ease;
+    
 }
 
-.course-card a,
-btn {
-    max-width: 100%;
-    width: 50%;
-    background-color: #0d2d62;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
+.course-slide img.active{
+    opacity:1;
 }
 
-.course-card btn :hover {
-    background-color: #e68900;
+.course-content{
+    padding:0 2rem 2rem 1rem;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
 }
 
+.course-content h3{
+    margin:0.1rem;
+}
+
+.course-content p{
+    line-height:1.6;
+    color:#555;
+    margin-bottom:1rem;
+    flex-grow:-1;
+    
+}
+.course-content ul{
+    line-height:1.6;
+    color:#555;
+    margin-bottom:1rem;
+    margin-left: 2rem;
+}
+
+.apply-btn{
+    margin-top:auto;
+    align-self:flex-start;
+    text-decoration:none;
+    background:#0066cc;
+    color:#fff;
+    padding:.8rem 1.4rem;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.apply-btn:hover{
+    background:#004d99;
+}
 /*======================================
     ABOUT PAGE
 ========================================*/
 .aboutpage-container {
     max-width: 1200px;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
+    background-color: #ffffff;
 }
-
 .about-content-section-title {
     border: 2px solid white;
     padding: 1rem 2rem;
     font-size: 1.2rem;
     color: #004aad;
-    font-weight: 600;
     text-align: center;
     margin-top: 1.2rem;
 }
 
 .aboutpage-content-card p {
-    padding: 1rem 2rem;
+    padding: 1rem;
     font-size: 1.3rem;
-    line-height: 1.6rem;
+    line-height: 1.3;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ 
 }
 
-.aboutpage-image img {
-    border-radius: 10px;
-    margin-top: 1.5rem;
+.aboutpage-image-carousel-container{
+    max-width: 100%;
     width: 90%;
+    border-radius: 1rem;
+    margin: auto;
+   
 }
+.aboutpage-image-carousel {
+    overflow: hidden;
+    position: relative;
+    padding: 2.5rem 0;
+
+}
+
+.aboutpage-image-slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.aboutpage-image-slides img {
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+}
+
 
 .aboutpage-mission-vision {
     margin: 0 auto;
@@ -882,15 +919,18 @@ btn {
 }
 
 .team-section-card {
+    max-width: 1200px;
+    width: 100%;
     background: #fff;
     border-radius: 15px;
-    padding: 25px;
+    padding: 1rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+    
 }
 
 .team-section-card:hover {
@@ -899,18 +939,21 @@ btn {
 }
 
 .team-section-card img {
-    width: 140px;
-    height: 140px;
+    width: 10rem;
+    height: 10rem;
     object-fit: cover;
     border-radius: 50%;
-    border: 4px solid #1e3a8a;
+    border: 0.2rem solid #1e3a8a;
     margin-bottom: 15px;
+    margin: auto;
+    
 }
 
 .team-section-card h3 {
     margin: 10px 0 5px;
     color: #222;
     font-size: 1.3rem;
+    text-align: center;
 }
 
 .team-section-card span {
@@ -918,12 +961,15 @@ btn {
     color: #2563eb;
     font-weight: 600;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .team-section-card p {
     color: #666;
     font-size: 0.95rem;
     line-height: 1.6;
+    max-width: 100%;
+    width: 100%;
 }
 
 /*==========================
@@ -1384,7 +1430,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
    SMALL PHONES Width: 481px - 600px
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media (30rem < width <=37.5rem) {
-
     /* HOMEPAGE */
     .home-hero {
         background-size: contain;
@@ -1587,7 +1632,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     .company-details h2 {
         color: #0d2d62;
         font-size: 1.1rem;
-        
     }
 
     .company-details p {
@@ -1612,7 +1656,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .off-screen-menu {
-
         width: 12rem;
         max-width: 100%;
         display: flex;
@@ -1776,7 +1819,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     .stats-section-title h2 {
         font-size: 2rem;
         margin-top: -20px;
-
     }
 
     .stats-section-title p {
@@ -1826,12 +1868,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .home-highlights-card h2 {
-        font-size: 1.5em;
+        font-size: 0.5rem;
         padding: 0.5rem;
     }
-
+  
     .home-highlights-card li {
-        font-size: 1.2;
+        font-size: 1.2rem;
         line-height: 1.6m;
     }
 
@@ -1925,9 +1967,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         font-size: 1.2rem;
     }
 
-
-
-
     /* Admission Page */
 
     .admission-container {
@@ -1980,7 +2019,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         max-width: 100%;
         width: 95%;
         padding: 0.5rem;
-
     }
 
     .faq-container .outro {
@@ -1994,7 +2032,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         max-width: 100%;
         width: 100%;
         margin: 0 auto;
-
     }
 
     .about-content-section-title h2 {
@@ -2047,8 +2084,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         font-size: 1.2rem;
     }
 
-
-
     .our-client-section-title h2 {
         font-size: 1.2rem;
     }
@@ -2060,10 +2095,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
     }
 
     .team-section-container {
-
         margin-bottom: 1rem;
-
-
     }
 
     .team-section-grid {
@@ -2096,16 +2128,13 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         margin: auto;
         margin-top: -1rem;
         margin-bottom: -0.6rem;
-
     }
 
     .team-section-card h3 {
-
         color: #222;
         font-size: 1.2rem;
         text-align: center;
         color: teal;
-
     }
 
     .team-section-card span {
@@ -2116,8 +2145,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         padding-bottom: -1rem;
         font-size: 1rem;
         text-align: center;
-
-
     }
 
     .team-section-card p {
@@ -2133,13 +2160,22 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
         width: 95%;
         flex-direction: column;
     }
+    .contact-info h2{
+   
+        font-size: 2rem;
+    }
 
+.contact-form h2{
+   
+    font-size: 2rem;
+}
     .contact-info h2 {
         font-size: 2rem;
     }
 
     .contact-info p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        
     }
 
     .contact-form input,
@@ -2149,13 +2185,10 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
     .contact-form button {
         font-size: 1.2rem;
-
-
-
     }
 
     .blog-content p {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
@@ -2419,14 +2452,11 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
     /* FAQ */
 
-
     /* CONTACT */
 
     .contact-container {
         width: 95%;
     }
-
-
 
     /* BLOG */
     .blog-container {

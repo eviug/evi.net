@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    padding:2rem;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:2rem;
+
+}
+
+.courses-grid{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:2rem;
+}
+
+.course-card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+
+.course-slide{
+    position:relative;
+    height:20rem;
+    overflow:hidden;
+}
+
+.course-slide img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height: 100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 3s ease;
+    
+}
+
+.course-slide img.active{
+    opacity:1;
+}
+
+.course-content{
+    padding:0 2rem 2rem 1rem;
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+
+.course-content h3{
+    margin:0.1rem;
+}
+
+.course-content p{
+    line-height:1.6;
+    color:#555;
+    margin-bottom:1rem;
+    flex-grow:-1;
+    
+}
+.course-content ul{
+    line-height:1.6;
+    color:#555;
+    margin-bottom:1rem;
+    margin-left: 2rem;
+}
+
+.apply-btn{
+    margin-top:auto;
+    align-self:flex-start;
+    text-decoration:none;
+    background:#0066cc;
+    color:#fff;
+    padding:.8rem 1.4rem;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.apply-btn:hover{
+    background:#004d99;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Our Courses</h1>
+
+<div class="courses-grid">
+
+    <div class="course-card">
+        <div class="course-slide">
+            <img src="img/ict1.webp" class="active">
+            <img src="img/ict2.webp">
+            <img src="img/ict3.webp">
+        </div>
+        <div class="course-content">
+            <h3>ICT</h3>
+            <p>
+                Learn computer applications, networking, programming,
+                and digital skills for the modern workplace.
+            </p>
+
+            <ul>
+                <li>Computer Applications</li>
+                <li>Repair & Maintenance</li>
+                <li>Web Development</li>
+                <li>Networking Basics</li>
+                <li>Graphic Design</li>
+            </ul>
+
+            <a href="admissions.html" class="apply-btn">Apply Now</a>
+        </div>
+        
+    </div>
+
+    <div class="course-card">
+        <div class="course-slide">
+            <img src="img/electrical1.jpeg" class="active">
+            <img src="img/electrical2.webp">
+            <img src="img/electrical-class.webp">
+        </div>
+        <div class="course-content">
+            <h3>Electrical Installation</h3>
+            <p>
+                Gain practical knowledge in wiring, electrical
+                maintenance, and industrial installations.
+            </p>
+
+            <ul>
+                <li>Domestic Wiring</li>
+                <li>Industrial Installation</li>
+                <li>Electrical Safety</li>
+                <li>Maintenance Skills</li>
+                <li>Basic Computer Skills</li>
+            </ul>
+
+            <a href="admissions.html" class="apply-btn">Apply Now</a>
+        </div>
+
+        
+    </div>
+
+    <div class="course-card">
+        <div class="course-slide">
+            <img src="img/fandd.webp" class="active">
+            <img src="img/fashion.webp">
+            <img src="img/fashion3.webp">
+        </div>
+        <div class="course-content">
+            <h3>Fashion & Design</h3>
+            <p>
+                Build creative skills in tailoring, garment
+                construction, and fashion entrepreneurship.
+            </p>
+
+            <ul>
+                <li>Tailoring</li>
+                <li>Garment Design</li>
+                <li>Fabric Cutting</li>
+                <li>Fashion Business</li>
+            </ul>
+            <a href="admissions.html" class="apply-btn">Apply Now</a>
+
+        </div>
+    </div>
+
+    <div class="course-card">
+        <div class="course-slide">
+            <img src="img/catering1.jpg" class="active">
+            <img src="images/catering2.jpg">
+            <img src="images/catering3.jpg">
+        </div>
+        <div class="course-content">
+            <h3>Catering & Hotel Management</h3>
+            <p>
+                Develop culinary, hospitality, and customer service
+                skills for the tourism industry.
+            </p>
+
+            <ul>
+                <li>Food Preparation</li>
+                <li>Bakery Skills</li>
+                <li>Hotel Operations</li>
+                <li>Customer Care</li>
+                <li>Entrepreneurship & Basic Computer Skills</li>
+            </ul>
+
+            <a href="admissions.html" class="apply-btn">Apply Now</a>
+        </div>
+        
+    </div>
+
+    <div class="course-card">
+        <div class="course-slide">
+            <img src="img/hairdressing.webp" class="active">
+            <img src="images/hair2.jpg">
+            <img src="images/hair3.jpg">
+        </div>
+        <div class="course-content">
+            <h3>Beauty & Cosmetology</h3>
+            <p>
+                Get technical expertise in hair, skin, and nails,
+                alongside essential professional habits like client
+                communication, sanitation, and retail sales.
+            </p>
+            <ul>
+                <li>Hair Cutting and Styling</li>
+                <li>Hair Coloring and Chemical Services</li>
+                <li>Skincare and Esthetics</li>
+                <li>Nail Care and Artistry</li>
+                <li>Sanitation and Hygiene</li>
+            </ul>
+            <a href="admissions.html" class="apply-btn">Apply Now</a>
+        </div>
+    </div>
+
+    <div class="course-card">
+        <div class="course-slide">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd"
+            alt="Construction Course" class="active">
+            <img src="images/beauty2.jpg">
+            <img src="images/beauty3.jpg">
+        </div>
+        <div class="course-content">
+            <h3>Building & Construction</h3>
+            <p>
+                Train in modern construction techniques, carpentry,
+                bricklaying, and site management.
+            </p>
+
+            <ul>
+                <li>Bricklaying</li>
+                <li>Carpentry</li>
+                <li>Site Safety</li>
+                <li>Construction Planning</li>
+            </ul>
+
+            <a href="admissions.html" class="apply-btn">Apply Now</a> 
+        </div>
+    </div>
+
+    
+    <div class="course-card">
+        <div class="course-slide">
+            <img src="img/automotive1.jpg" class="active">
+            <img src="img/automotive2.webp">
+            <img src="images/building3.jpg">
+        </div>
+        <div class="course-content">
+            <h3>Automotive and Driving</h3>
+            <p>
+                Comprehensive training in modern vehicle diagnosis,
+                service, and repair, blending theoretical knowledge with
+                hands-on shop experience
+            </p>
+
+            <ul>
+                <li>Engine Performance & Repair</li>
+                <li>Suspension and Braking Systems</li>
+                <li>Automatic and Manual Transmissions</li>
+                <li>
+                    Diagnose engine, brake, and transmission systems
+                </li>
+                <li>Driving</li>
+            </ul>
+
+            <a href="admissions.html" class="apply-btn">Apply Now</a>
+        </div>
+    </div>
+
+    <div class="course-card">
+        <div class="course-slide">
+            <img src="img/plumbing.webp" class="active">
+            <img src="images/business2.jpg">
+            <img src="images/business3.jpg">
+        </div>
+        <div class="course-content">
+            <h3>Plumbing</h3>
+            <p>
+                Learn to design, install, and maintain critical systems
+                in homes and businesses
+            </p>
+            <ul>
+                <li>Pipefitting and Joining</li>
+                <li>System Installation & Repair</li>
+                <li>System Diagnostics</li>
+                <li>Drainage and Venting</li>
+            </ul>
+            <a href="admissions.html" class="apply-btn">Apply Now</a>
+        </div>
+    </div>
+
+    <div class="course-card">
+        <div class="course-slide">
+            <img src="img/welding.jpg" class="active">
+            <img src="images/agriculture2.jpg">
+            <img src="images/agriculture3.jpg">
+        </div>
+        <div class="course-content">
+            <h3>Welding</h3>
+            <p>
+                Learn computer applications, networking, programming,
+                and digital skills for the modern workplace.
+            </p>
+
+            <ul>
+                <li>Mastery of various welding methods</li>
+                <li>Metalworking & Tool Handling</li>
+                <li>Layout and Fitting</li>
+                <li>Safety Consciousness</li>
+                <li>Blueprint Reading</li>
+            </ul>
+
+            <a href="admissions.html" class="apply-btn">Apply Now</a>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+const courseSlides = document.querySelectorAll('.course-slide');
+
+courseSlides.forEach((courseSlide,index)=>{
+
+    const images = courseSlide.querySelectorAll('img');
+    let current = 0;
+
+    function nextSlide(){
+
+        images[current].classList.remove('active');
+
+        current = (current + 1) % images.length;
+
+        images[current].classList.add('active');
+    }
+
+    setTimeout(()=>{
+
+        setInterval(nextSlide,7000);
+
+    },index * 1000);
+
+});
+
+</script>
+
+</body>
+</html>
